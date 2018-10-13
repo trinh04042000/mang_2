@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var a = prompt("Nhập chuỗi 1: ");
+    var b = prompt("Nhập chuỗi 2: ");
+    function arr(a,b) {
+        if (a.length != b.length) {
+            return false;
+        } else {
+            for (var i = 0; i < b.length; i++) {
+                if (a[i] != b[i]) return false;
+            }
+        }
+        return true;
+    }
+    if (arr(a,b)) alert("Hai chuỗi giống nhau");
+    else alert("Hai chuỗi khác nhau");
+</script>
+</body>
+</html>
